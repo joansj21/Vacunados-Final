@@ -147,6 +147,6 @@ app.post('/game/:gameid/go', function (req, res) {
 })
 
 console.log('Iniciando Server');
-app.listen(80) // puerto del server
+app.listen(3000) // puerto del server
 juego.loadGames();
 console.log('Server Iniciado');
