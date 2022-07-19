@@ -214,7 +214,7 @@ module.exports = {
         }
 
         //si no existe el jugador regresa este error
-        if (i === playersGame.length) {
+        if (!playersGame.includes(name)) {
             return "403";
         }
 
