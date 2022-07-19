@@ -170,6 +170,11 @@ module.exports = {
             return "404";
         }
 
+
+        if (games[id].status!=="lobby") {
+            return "406";
+        }
+
         let playersGame = games[id].players;
         //si ya esta lleno
         if (playersGame.length == 10) {

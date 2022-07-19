@@ -21,7 +21,7 @@ app.post('/game/create', function (req, res) {
 
     if (!jugador || !nombre) {//para controlar el error si manda un dato nulo 
         res.status(406).send({
-            "error": "Campos obligatorios faltantes"
+            "error": "missing name header or game name parameters"
         });
         return;
     }
@@ -39,12 +39,12 @@ app.get('/game/:gameid', function (req, res) {
 
     if (result === "404") {
         res.status(404).send({
-            "error": "No existe el juego"
+            "error": "Invalid Game's id"
         })
         return;
     } else if (result === "403") {
         res.status(403).send({
-            "error": "Jugador no se encuentra en el juego"
+            "error": "You are not part of the players list"
         })
     } else {
         res.status(200).send(result)
@@ -60,13 +60,13 @@ app.put('/game/:gameid/join', function (req, res) {
     let result = juego.joinGame(id, jugador, pass);
     //falta los demas errores
     if (result === "404") {
-        res.status(404).send({ "error": "Juego no existe" })
+        res.status(404).send({ "error": "Invalid Game's id" })
 
     } else if (result === "406") {
-        res.status(406).send({ "error": "Juego esta lleno" })
+        res.status(406).send({ "error": "Game has already started or is full" })
 
     } else if (result === "409") {
-        res.status(409).send({ "error": "Ya estas en el juego" })
+        res.status(409).send({ "error": "You are already part of this game" })
 
     } else {
         res.status(200).send({
