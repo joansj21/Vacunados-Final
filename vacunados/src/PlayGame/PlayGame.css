@@ -1,0 +1,60 @@
+.game-main {
+    background: #f1f7fe;
+    padding: 2rem;
+    display: flex;
+    flex-direction: row;
+    border-radius: 30px;
+}
+
+.lobby-wait, .lobby-info, .choose-round, .send-div {
+    display: flex;
+    flex-direction: column;
+}
+
+.lobby-players p {
+    text-align: center;
+    margin-top: 0.5rem;
+}
+
+.playerInfo p {
+    text-align: center;
+    margin-top: 0.5rem;
+}
+
+.choose-div {
+    display: flex;
+    flex-direction: row;
+}
+
+.choose-div button {
+    padding: 0.8rem;
+    background: #4d4d4d;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-weight: 600;
+    margin-top: 1rem;
+    cursor: pointer;
+    margin-right: 0.5rem;
+}
+
+.choose-div button:disabled {
+    background: #dadada;
+    cursor: not-allowed;
+}
+
+.choose-protection button {
+    padding: 0.8rem;
+    background: #4d4d4d;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-weight: 600;
+    margin-top: 1rem;
+    cursor: pointer;
+    margin-right: 0.5rem;
+}
+
+.singleRound {
+    margin-top: 1rem;
+}

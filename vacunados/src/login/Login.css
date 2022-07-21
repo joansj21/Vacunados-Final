@@ -1,0 +1,28 @@
+.login-main {
+    background: #f1f7fe;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    border-radius: 30px;
+    min-width: 20rem;
+}
+
+.session {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+
+.session-lbl {
+    margin-right: 1rem;
+}
+
+.session-btn {
+    padding: 0.5rem 1rem;
+    background: #4d4d4d;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-weight: 600;
+    cursor: pointer;
+}

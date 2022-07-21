@@ -1,0 +1,20 @@
+.join-main {
+    background: #f1f7fe;
+    padding: 2rem;
+    display: flex;
+    flex-direction: row;
+    border-radius: 30px;
+}
+
+.create-game {
+    margin-right: 2rem;
+    display: flex;
+    flex-direction: column;
+    min-width: 20rem;
+}
+
+.join-game {
+    display: flex;
+    flex-direction: column;
+    min-width: 20rem;
+}

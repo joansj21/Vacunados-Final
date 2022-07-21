@@ -1,0 +1,45 @@
+.field-group {
+    background: white;
+    box-shadow: 0 0 2rem #e6e9f9;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    color: #4d4d4d;
+    margin-top: 2rem;
+}
+
+.field-group input[type="text"] {
+    outline: none;
+    border: none;
+    border-bottom: #4d4d4d 1px solid;
+    margin-top: 0.5rem;
+}
+
+.field-group select {
+    outline: none;
+    border: none;
+    border-bottom: #4d4d4d 1px solid;
+    margin-top: 0.5rem;
+}
+
+.main-btn {
+    padding: 0.8rem;
+    background: #4d4d4d;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-weight: 600;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+
+.spacer {
+    min-height: 1rem;
+}
+
+.error-lbl {
+    margin-top: 1rem;
+    color: red;
+    text-align: center;
+}
